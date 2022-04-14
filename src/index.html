@@ -11,19 +11,39 @@
 <body>
   <div class="container">
     <div class="level-buttons">
-      <!-- <button class="btn-primary" id="levelUp"> Level Up </button>
-      <button class="btn-primary" id="levelUpStr"> Level Up Strength </button>
-      <button class="btn-primary" id="levelUpDex"> Level Up Dexterity </button>
-      <button class="btn-primary" id="levelUpInt"> Level Up Intelligence </button> -->
+      <button class="btn-primary" id="levelUp"> Gain xp </button>
+      <button class="btn-primary" id="levelUpStr"> potion of strength </button>
+      <button class="btn-primary" id="levelUpDex"> potion of dexterity Dexterity </button>
+      <button class="btn-primary" id="levelUpInt"> Potion of intelligence Intelligence </button>
+      <button class="btn-primary" id="levelUpHealth"> Drink a health Potion! </button>
+      <button class="btn-primary" id="fightOrcs"> Fight some Orcs! </button>
       <!-- <button class="btn-primary" id="show-state"> Current Stats </button> -->
-      <button class="btn-primary" id="new-character">Start New Character</button>
+      <!-- <button class="btn-primary" id="new-character">Start New Character</button> -->
 
     </div>
+    <form action="submit">
+      <label for="characterTypes">Character Creation</label>
+      <select id="characterTypes">
+        <option value="warrior">Warrior</option>
+        <option value="cleric">Cleric</option>
+        <option value="wizard">Wizard</option>
+      </select>
+
+      <label for="statType1">Choose Your Focus Stat</label>
+      <select id="statType1">
+        <option value="strength">Strength</option>
+        <option value="dexterity">Dexterity</option>
+        <option value="intelligence">Intelligence</option>
+      </select>
+      
+      <button type="submit" class="btn-primary">Create Character</button>
+    </form>
     <h1>Your Character's Values</h1>
     <h3><div id="level-value"></div></h3>
     <h3><div id="levelStr-value"></div></h3>
     <h3><div id="levelDex-value"></div></h3>
     <h3><div id="levelInt-value"></div></h3>
+    <h3><div id="levelHealth-value"></div></h3>
     <div id="output"></div>
   </div>
 </body>
